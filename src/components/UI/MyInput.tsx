@@ -39,7 +39,7 @@ const MyInput: React.FC = () => {
 			<input 
 				className={cl.input} 
 				type="text" 
-				placeholder='Поиск пиццы...' 
+				placeholder='Looking for...' 
 				value={value}
 				onChange={(event) => onChangeInput(event)}
 				ref={myinp}

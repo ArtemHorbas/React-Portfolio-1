@@ -5,7 +5,7 @@ import { FilterSliceTypes, SortType } from './type'
 const initialState: FilterSliceTypes = {
 	categorieIndex: 0,
 	sort: {
-		name: 'популярности(DESC)',
+		name: 'Popularity(DESC)',
 		sortBy: 'rating',
 	},
 	searchValue: '',

@@ -8,7 +8,7 @@ export const fetchFull = createAsyncThunk<fullItem, string>(
 	'fullItem/fetchFullStatus',
 	async (id) => {
 		const {data} = await axios.get<fullItem>(
-			`https://62becd9f0bc9b125615fa020.mockapi.io/items/${id}`
+			`https://62c6dda774e1381c0a6b1222.mockapi.io/data/${id}`
 			)
 		return data
 	}

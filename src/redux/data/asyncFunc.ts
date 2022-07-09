@@ -7,7 +7,7 @@ export const fetchItems = createAsyncThunk<Data[], urlPrams>(
 	'data/fetchItemsStatus',
 	async ({page, category, sortBy, order}) => {
 		const {data} = await axios.get<Data[]>(
-			`https://62becd9f0bc9b125615fa020.mockapi.io/items?page=${page}&limit=4&${category}&sortBy=${sortBy}&order=${order}`
+			`https://62c6dda774e1381c0a6b1222.mockapi.io/data?page=${page}&limit=4&${category}&sortBy=${sortBy}&order=${order}`
 			)
 		return data
 	}

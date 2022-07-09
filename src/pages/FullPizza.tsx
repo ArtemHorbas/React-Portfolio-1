@@ -22,16 +22,14 @@ const FullPizza: React.FC = () => {
 		<div className="container ">
 			<img src={item.imageUrl} />
 			<h2>{item.title}</h2>
-			<h4>{item.price} ₽</h4>		
+			<h4>{item.price} €</h4>		
 			<Link to="/">
 				<button className="button button--outline button--add">
-					<span>Назад</span>
+					<span>Turn Back</span>
 				</button>
 			</Link>
 		</div>
   )
 }
-
-
 
 export default FullPizza

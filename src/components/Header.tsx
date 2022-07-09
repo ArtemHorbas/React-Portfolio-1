@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <div className="container">
           	<Link to='/'>
 				<div className="header__logo">
-						<img width="38" src="./img/pizza-logo.svg" alt="Pizza logo" />
+						<img width="148" src="https://res.cloudinary.com/practicaldev/image/fetch/s--W8x_24mF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g3ugfvkcd8534n1m3lj1.png" alt="Pizza logo" />
 						<div>
 							<h1> React project</h1>
 							<p>All newest functions in it</p>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
 			<MyInput />
           <div className="header__cart">
         	 <Link to="/cart" className="button button--cart">
-              <span>{totalPrice} ₽</span>
+              <span>{totalPrice} €</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"

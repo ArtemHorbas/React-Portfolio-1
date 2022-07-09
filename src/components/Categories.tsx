@@ -8,7 +8,7 @@ const Categories: React.FC = React.memo(() => {
 	const {categorieIndex} = useAppSelector(state => state.filter)
 
   
-	const categories: string[] = ["Все","Мясные","Вегетарианские","Гриль","Острые","Закрытые"]
+	const categories: string[] = ["All","Meats","Vegetarians","Grill","Hot chilli","Closed"]
 	
 	const onClickLi = (index: number) =>{
 		dispatch(setCategorie(index))

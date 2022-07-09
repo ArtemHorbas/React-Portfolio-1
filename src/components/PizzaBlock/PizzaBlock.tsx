@@ -28,7 +28,7 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({imageUrl, title, types, sizes, p
 	const [activeType, setActiveType] = React.useState(0)
 	const [activeSize, setActiveSize] = React.useState(0)
 
-	const typeNames: string[] = ['тонкая', "традиционная"]
+	const typeNames: string[] = ['think', "traditional"]
 
 	const onClickAdd = () => {
 		const item: CartItem = {
@@ -41,7 +41,6 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({imageUrl, title, types, sizes, p
 			count: 1
 		}
 		dispatch(addItem(item))
-		// axios.post('https://62c6dda774e1381c0a6b1222.mockapi.io/cart', item)
 	}
 
 	return (
@@ -69,13 +68,13 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({imageUrl, title, types, sizes, p
 						onClick={() => setActiveSize(index)} 
 						className={activeSize === index ? 'active' : ''} 
 						key={index + 1}>
-						{size} см.
+						{size} sm.
 					</li>
 				))}
 			</ul>
 		</div>
 		<div className="pizza-block__bottom">
-			<div  className="pizza-block__price">от {price} ₽</div>
+			<div  className="pizza-block__price">from {price}  €</div>
 				<button onClick={onClickAdd}  className="button button--outline button--add">
 					<svg
 					width="12"
@@ -89,7 +88,7 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({imageUrl, title, types, sizes, p
 						fill="white"
 					/>
 					</svg>
-					<span>Добавить</span>
+					<span>Add</span>
 					{addedCount > 0 && <i>{addedCount}</i>}
 				</button>
 			</div>	

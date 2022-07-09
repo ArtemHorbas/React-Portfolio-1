@@ -4,12 +4,12 @@ import { SortType } from '../redux/filter/type'
 import { useAppDispatch, useAppSelector } from '../redux/store'
 
 export const options: SortType[] = [
-		{name: 'популярности(DESC)', sortBy: 'rating'},
-		{name: 'популярности(ASC)', sortBy: '-rating'},
-		{name: 'цене(DESC)', sortBy: 'price'},
-		{name: 'цене(ASC)', sortBy: '-price'},
-		{name: 'алфавиту(DESC)', sortBy: 'title'},
-		{name: 'алфавиту(ASC)', sortBy: '-title'},
+		{name: 'Popularity(DESC)', sortBy: 'rating'},
+		{name: 'Popularity(ASC)', sortBy: '-rating'},
+		{name: 'Price(DESC)', sortBy: 'price'},
+		{name: 'Price(ASC)', sortBy: '-price'},
+		{name: 'Name(DESC)', sortBy: 'title'},
+		{name: 'Name(ASC)', sortBy: '-title'},
 ]
 
 const Sort: React.FC = React.memo(() => {
