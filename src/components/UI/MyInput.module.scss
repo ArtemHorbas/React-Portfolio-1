@@ -1,0 +1,25 @@
+.input{
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 12px 20px 12px 40px;
+	width: 300px;
+	border-radius: 15px;
+	font-size: 16px;
+	transition: width 0.2s ease-in;
+
+	&:focus{
+		border: 1px solid rgba(0, 0, 0, 0.25);
+		width: 450px;
+	}
+}
+
+.root{
+	position: relative;
+}
+
+.img{
+	position: absolute;
+	left: 12px;
+	top: 12px;
+
+	cursor: pointer;
+}
