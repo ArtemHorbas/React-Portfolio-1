@@ -18,7 +18,7 @@ const Categories: React.FC = React.memo(() => {
 	return (
 	<div className="categories">
 		<ul>
-			{categories.map((categoryName, index) => (
+			{categories.map((categoryName, index) => ( 
 				<li 
 					key={categoryName}
 					className={index === categorieIndex  ? 'active' : ''}
